@@ -1,0 +1,15 @@
+* {
+  font-family: Consolas;
+
+}
+
+.quake {
+  border-style: solid;
+  border-width: 1px;
+  padding: 3px;
+}
+
+#quakes {
+  background-color: grey;
+  margin-right: 65%;
+}
