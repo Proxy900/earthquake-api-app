@@ -38,13 +38,15 @@ $(document).ready(function() {
         quakes[i].desc = "Great";
       }
 
-      $("#quakes").append('<tr class="quake"><td><a href='+quakes[i].details+'>'+quakes[i].place+'</a></td>'+'<td>'+quakes[i].mag+'</td>'+'<td>'+quakes[i].date+'</td>'+'<td>'+quakes[i].desc+'</td>'+'</tr>');
+      $("#quakes").append('<tr class="quake"><td><a href='+quakes[i].details+'>'+quakes[i].place+'</a></td>'
+      +'<td>'+quakes[i].mag+'</td>'+'<td>'+quakes[i].date+'</td><td>'+quakes[i].desc+'</td>');
+
       $("tr:last").attr('id', i);
 
-      if (quakes[i].mag > 1) {
+      if (quakes[i].mag >= 1) {
         $('#'+i).css('font-weight', '800');
       }
-      
+
       if (quakes[i].mag < 1) {
         $('#'+i).css('background-color', '#c1d9ff');
       }
