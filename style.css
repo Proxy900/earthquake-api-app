@@ -3,13 +3,34 @@
 
 }
 
+table {
+  width: 100%;
+}
+
 .quake {
   border-style: solid;
   border-width: 1px;
   padding: 3px;
 }
 
-#quakes {
-  background-color: grey;
-  margin-right: 65%;
+tr {
+  border-style: solid;
+  border-width: 2px;
+}
+
+td {
+  border-style: solid;
+  border-width: 2px;
+  color: black;
+}
+
+th {
+  border-style: solid;
+  border-width: 2px;
+  background-color: gold;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
